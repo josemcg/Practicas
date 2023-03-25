@@ -13,3 +13,17 @@ for (let i = 0; i < arrayLis.length; i++) {
         arrayLis[i].style.backgroundColor = "red";
     }
 }
+
+//eventos
+
+// 1) capturamos el elemento HTML
+
+const titulo = document.querySelector('h1');
+
+// 2) Aplicamos el evento que necesitemos
+
+titulo.addEventListener('click', () => {
+// 3) Escribimos la accion que queremos
+    alert('Hola mundo');
+    
+}
