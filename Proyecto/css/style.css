@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap");
+
+/* * {
+    box-sizing: border-box;
+} */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    height: 174px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    justify-self: flex-end;
+    margin-right: 100px;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    font-size: 1.2em;
+}
+
+/* nav ul li {
+    margin-right: 30px;
+} */
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    margin-right: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #eee;
+}
+
+.seleccion {
+    background-color: #ddbc27;
+}
+
+#hero {
+    height: 50vh;
+    background-image: url(../media/cine-hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: #999;
+    background-blend-mode: multiply;
+}
+
+form {
+    padding: 30px 20px 0 0;
+    float: right;
+}
+
+#busqueda {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 250px;
+}
+
+#boton-busqueda {
+    background-color: #ddbc27;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.titulo {
+    display: inline-block;
+    border-radius: 5px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 30px;
+    font-size: 50px;
+    background-color: #ddbc27;
+    color: black;
+    position: relative;
+    top: 55%;
+    left: 10%;
+}
+
+/*---- main------------------------------------ */
+
+main {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 93%;
+    margin: -40px auto;
+    background-color: hsla(0, 0%, 100%, 0.218);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main figure {
+    width: 250px;
+    margin: 20px;
+}
+figcaption {
+    margin: 10px 0;
+}
+
+/* ------------footer--------------- */
+
+footer {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.marca {
+    color: white;
+    margin-left: 20px;
+}
+
+.logo-footer {
+    width: 80px;
+    margin-right: 20px;
+}
