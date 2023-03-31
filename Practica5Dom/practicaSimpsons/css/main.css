@@ -10,11 +10,11 @@
 
 .container {
     height: 100vh;
-    font-family: 'Lilita One', cursive;
+    font-family: "Lilita One", cursive;
     color: white;
 }
 
-img{
+img {
     height: 100%;
 }
 
@@ -23,9 +23,9 @@ img{
 ***********************************/
 
 .bienvenida {
-    background-image: url('../img/bg-image.jpg');
+    background-image: url("../img/bg-image.jpg");
     background-size: cover;
-    
+
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -51,13 +51,12 @@ img{
     padding: 12px 0;
 }
 
-
 /**********************************
        SECCIÓN PERSONAJES
 ***********************************/
 
 .personajes {
-    background-image: url('../img/bg-pattern.jpg');
+    background-image: url("../img/bg-pattern.jpg");
     background-repeat: repeat-y;
 
     display: none;
@@ -124,13 +123,13 @@ img{
     padding: 8px 0;
 }
 
-.personajes span i{
+.personajes span i {
     display: inline-block;
     margin-left: 8px;
 }
 
 .personaje-seleccionado {
-    background-color: rgba(231, 177, 0, 0.8)!important;
+    background-color: rgba(231, 177, 0, 0.8) !important;
     box-shadow: 0 8px 6px -6px black;
 }
 
