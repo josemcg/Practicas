@@ -131,9 +131,9 @@ figcaption {
     margin: 10px 0;
 }
 
-/* .ocultar {
-    display: none;
-} */
+.ocultar {
+    visibility: hidden;
+}
 
 /* ------------footer--------------- */
 
