@@ -4,10 +4,10 @@ window.addEventListener("DOMContentLoaded", () => {
     const apiKey = "068c11e1952149f3e26da6fafc7231c0"; //mi_clave_de_API_de_TMDb
     const baseUrl = "https://api.themoviedb.org/3";
     const fileSize = "https://image.tmdb.org/t/p/w500/";
-    const busquedaPopular = `${baseUrl}/movie/popular?api_key=${apiKey}`;
+    const busquedaProximamente = `${baseUrl}/movie/upcoming?api_key=${apiKey}`;
 
     // Hacer una solicitud GET a la API de TMDb para obtener información sobre una película
-    fetch(busquedaPopular)
+    fetch(busquedaProximamente)
         .then((response) => response.json())
         .then((data) => {
             // Utilizar la información de la respuesta JSON
@@ -21,31 +21,19 @@ window.addEventListener("DOMContentLoaded", () => {
                                 </a>
                                 <figcaption>${pelicula.title}</figcaption>
                                 <p>${pelicula.release_date}</p></br>
-                                <p class="ocultar"> ${pelicula.id}</p>
-                                <a href="#" class="addFavorite"> Añadir a Favoritos </a>
+                                <a href="#"> Añadir a Favoritos </a>
                             </figure>`;
             });
             contenedor.innerHTML = codigo;
 
-            var arrayIds = [];
-            var idsString = "";
-            const allTagsA = document.querySelectorAll(".addFavorite");
-            allTagsA.forEach(function (tagA) {
-                tagA.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const previousSibling = tagA.previousElementSibling;
+            // console.log(data);
+            // console.log(`Título: ${data.results.title}`);
+            // console.log(
+            //     `Póster: https://image.tmdb.org/t/p/w500/${data.poster_path}`
 
-                    if (arrayIds.includes(previousSibling.innerText)) {
-                        console.log("ya esta en favoritos");
-                    } else {
-                        arrayIds.push(previousSibling.innerText);
-                        console.log(arrayIds);
-                        idsString = JSON.stringify(arrayIds);
-                        console.log(idsString);
-                    }
-                    localStorage.setItem("id", idsString);
-                });
-            });
+            //     // const miElemento = document.querySelector('#mi-elemento');
+            //     // miElemento.setAttribute('src', 'nueva-imagen.jpg');
+            // );
         })
 
         .catch((error) => {

@@ -4,9 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Favoritos</title>
+        <title>Cartelera</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="js/favoritos.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -18,21 +19,28 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Cartelera</a></li>
+                        <li>
+                            <a href="index.html">Cartelera</a>
+                        </li>
                         <li>
                             <a class="seleccion" href="favoritos.html"
                                 >Favoritos</a
                             >
                         </li>
-                        <li><a href="estrenos.html">Estrenos</a></li>
+                        <li><a href="proximamente.html">Próximamente</a></li>
                         <li><a href="aboutus.html">About us</a></li>
                     </ul>
                 </nav>
             </header>
             <div id="hero">
-                <form>
+                <form action="busqueda.html" method="get">
                     <label for="busqueda"></label>
-                    <input type="text" id="busqueda" name="busqueda" />
+                    <input
+                        type="text"
+                        id="busqueda"
+                        name="busqueda"
+                        placeholder="Escriba aquí"
+                    />
                     <button type="submit" id="boton-busqueda">Buscar</button>
                 </form>
                 <div class="titulo">
@@ -40,13 +48,7 @@
                 </div>
             </div>
             <main>
-                <figure>
-                    <a href="#">
-                        <img src="media/prueba.jpg" alt="" />
-                    </a>
-                    <figcaption>Nombre de la peli</figcaption>
-                    <span>Fecha de estreno</span>
-                </figure>
+                <section class="contenedorTarjetas"></section>
             </main>
 
             <footer>

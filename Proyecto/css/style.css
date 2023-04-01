@@ -112,8 +112,7 @@ form {
 }
 
 /*---- main------------------------------------ */
-
-main {
+.contenedorTarjetas {
     border: 1px solid black;
     border-radius: 5px;
     width: 93%;
@@ -124,13 +123,17 @@ main {
     flex-wrap: wrap;
 }
 
-main figure {
+.contenedorTarjetas figure {
     width: 250px;
     margin: 20px;
 }
 figcaption {
     margin: 10px 0;
 }
+
+/* .ocultar {
+    display: none;
+} */
 
 /* ------------footer--------------- */
 
