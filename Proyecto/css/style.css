@@ -129,10 +129,17 @@ form {
 }
 figcaption {
     margin: 10px 0;
+    font-weight: 900;
 }
 
 .ocultar {
-    visibility: hidden;
+    color: white; /*si le pongo visibility hidden, no me lo mete en el array */
+    /* visibility: hidden; */
+}
+
+.sinopsis {
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 /* ------------footer--------------- */

@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
             contenedor.innerHTML = codigo;
 
             var arrayIds = [];
-            var idsString = "";
+            let idsString = "";
             const allTagsA = document.querySelectorAll(".addFavorite");
             allTagsA.forEach(function (tagA) {
                 tagA.addEventListener("click", function (event) {
@@ -37,13 +37,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
                     if (arrayIds.includes(previousSibling.innerText)) {
                         console.log("ya esta en favoritos");
+                        console.log(idsString);
                     } else {
                         arrayIds.push(previousSibling.innerText);
                         console.log(arrayIds);
-                        idsString = JSON.stringify(arrayIds);
-                        console.log(idsString);
+                        console.log(localStorage);
                     }
+                    idsString = JSON.stringify(arrayIds);
+                    console.log(arrayIds);
+                    console.log(idsString);
                     localStorage.setItem("id", idsString);
+                    console.log(localStorage);
                 });
             });
         })

@@ -21,7 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
                                 </a>
                                 <figcaption>${pelicula.title}</figcaption>
                                 <p>${pelicula.release_date}</p></br>
-                                <a href="#"> Añadir a Favoritos </a>
                             </figure>`;
             });
             contenedor.innerHTML = codigo;

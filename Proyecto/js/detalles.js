@@ -25,7 +25,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 </a>
                 <figcaption>${data.title}</figcaption>
                     <p>${data.release_date}</p></br>
-                    <p>Resumen: ${data.overview}</p>
+                    <p class="sinopsis">Sinopsis</p>
+                    <p>${data.overview}</p>
             </figure>`;
             contenedor.innerHTML = pintarEnHtml;
             titulo.innerText = data.title;
